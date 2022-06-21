@@ -7,8 +7,6 @@ local job = require('plenary.job')
 
 local flatten = vim.tbl_flatten
 
-print("reloaded")
-
 function list_contains(list, item)
   for _, l in ipairs(list) do
     if l == item then
