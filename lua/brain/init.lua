@@ -73,8 +73,9 @@ end
 
 function list_files(opts)
   local args = flatten {
-    "fd",
-    ".",
+    "neuron",
+    'list',
+    '--dir',
     opts.dir,
   }
   opts.entry_maker = opts.entry_maker or make_entry.gen_from_file(opts)
